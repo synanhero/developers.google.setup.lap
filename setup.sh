@@ -2,7 +2,7 @@
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install php5 php-pear -y
--echo 'deb http://packages.dotdeb.org wheezy-php56 all' | sudo tee --append /etc/apt/sources.list.d/dotdeb.list > /dev/null
+echo 'deb http://packages.dotdeb.org wheezy-php56 all' | sudo tee --append /etc/apt/sources.list > /dev/null
 sudo wget http://www.dotdeb.org/dotdeb.gpg
 sudo apt-key add dotdeb.gpg
 sudo apt-get update
