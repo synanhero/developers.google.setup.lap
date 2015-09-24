@@ -11,3 +11,13 @@ sudo touch /var/www/index.php
 sudo chmod 777 /var/www/index.php
 sudo echo "<?php phpinfo();" >> /var/www/index.php
 sudo service apache2 restart
+sudo apt-get install curl libcurl3 libcurl3-dev php5-curl
+cd /usr/local/src
+sudo wget http://curl.haxx.se/download/curl-7.44.0.tar.gz
+sudo tar -xvzf curl-7.44.0.tar.gz
+sudo rm curl-7.44.0.tar.gz
+cd curl-7.44.0
+sudo apt-get install build-essential -y
+sudo ./configure --with-ssl
+sudo make
+sudo service apache2 restart
