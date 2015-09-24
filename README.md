@@ -3,4 +3,4 @@ this is for quick setup Linux Apache Php for developers google virtual machine D
 
 run command
 
-  wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/setup.sh | bash
+    wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/setup.sh | bash
