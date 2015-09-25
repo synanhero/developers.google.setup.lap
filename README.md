@@ -10,3 +10,7 @@ this is for quick setup Linux Apache Php for developers google virtual machine D
     wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/update_curl | bash
     
 
+*update node*
+
+    wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/node.sh | bash
+    
