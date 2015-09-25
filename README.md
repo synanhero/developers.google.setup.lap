@@ -5,16 +5,9 @@ this is for quick setup Linux Apache Php for developers google virtual machine D
 
     wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/setup.sh | bash
     
-*update curl-7.44.0*
 
-    wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/update_curl | bash
-    
+*update php and curl*
 
-*update node*
-
-    wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/node.sh | bash
-    
-*update php*
-
-    wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/php | bash
-        
+    wget https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/php -O php.sh
+    chmod +x php.sh
+    ./php.sh
