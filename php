@@ -1,6 +1,6 @@
 apt-get update -y
 apt-get upgrade -y
-apt-get install build-essential apache2 php5 php5-cli curl libcurl3 libcurl3-dev php5-curl -y
+apt-get install build-essential apache2 php5 php5-cli -y
 touch /var/www/index.php
 chmod 777 /var/www/index.php
 echo "<?php phpinfo();" >> /var/www/index.php
@@ -20,5 +20,6 @@ cd curl-7.44.0
 ./configure --with-ssl
 make
 make install
-apt-get install curl libcurl3 libcurl3-dev php5-curl -y
+service apache2 restart
+apt-get install curl libcurl3 libcurl3-dev php5-curl php5-curl -y
 service apache2 restart
