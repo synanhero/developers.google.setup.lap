@@ -12,3 +12,13 @@ apt-get update -y
 apt-get upgrade -y
 apt-get install php5-cli -y
 service apache2 restart
+cd /usr/local/src
+wget http://curl.haxx.se/download/curl-7.44.0.tar.gz
+tar -xvzf curl-7.44.0.tar.gz
+rm *.gz
+cd curl-7.44.0
+./configure --with-ssl
+make
+make install
+apt-get install curl libcurl3 libcurl3-dev php5-curl -y
+service apache2 restart
