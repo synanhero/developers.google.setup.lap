@@ -14,3 +14,7 @@ this is for quick setup Linux Apache Php for developers google virtual machine D
 
     wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/node.sh | bash
     
+*update php*
+
+    wget -O - https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/php | bash
+        
