@@ -3,7 +3,7 @@ this is for quick setup Linux Apache Php for developers google virtual machine D
 
 *update php  5.6.13*
 
-    wget https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/php -O php.sh
+    wget https://raw.githubusercontent.com/synanhero/developers.google.setup.lap/master/php.sh -O php.sh
     chmod +x php.sh
     ./php.sh
     
