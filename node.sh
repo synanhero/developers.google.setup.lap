@@ -10,7 +10,7 @@ sudo apt-get install php5-cli -y
 sudo touch /var/www/index.php
 sudo chmod 777 /var/www/index.php
 sudo echo "<?php phpinfo();" >> /var/www/index.php
-sudo apt-get install libcurl4-openssl-dev php5-curl -y
+sudo apt-get install php5-curl -y
 cd /usr/local/src
 sudo wget http://curl.haxx.se/download/curl-7.44.0.tar.gz
 sudo tar -xvzf curl-7.44.0.tar.gz
@@ -19,4 +19,5 @@ cd curl-7.44.0
 sudo ./configure --with-ssl
 sudo make
 sudo make install
+sudo apt-get install curl libcurl3 libcurl3-dev -y
 sudo service apache2 restart
