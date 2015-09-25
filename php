@@ -23,3 +23,4 @@ make install
 service apache2 restart
 apt-get install curl libcurl3 libcurl3-dev php5-curl php5-curl -y
 service apache2 restart
+apt-get --reinstall install curl libc6 libcurl3 zlib1g
